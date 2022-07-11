@@ -29,10 +29,11 @@ public class Product {
 		this.price = price;
 	}
 
+	/*
 	@Override
 	public String toString() {
 		return name + ", " + price;
 	}
-
+	*/
 	
 }

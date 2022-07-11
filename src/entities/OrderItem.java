@@ -53,7 +53,7 @@ public class OrderItem {
 	
 	@Override
 	public String toString() {
-		return product + ", Quantity: " + quantity + ", Subtotal: " + subTotal();
+		return product.getName() + ", " + product.getPrice() + ", Quantity: " + quantity + ", Subtotal: " + subTotal();
 	}
 	
 	

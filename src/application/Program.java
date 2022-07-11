@@ -27,15 +27,15 @@ public class Program {
 		String clientEmail = sc.nextLine();
 		System.out.print("Birth date (DD/MM/YYYY): ");
 		Date birthDate = sdf.parse(sc.next());
-		Client client = new Client(clientName, clientEmail, birthDate);
+		//Client client = new Client(clientName, clientEmail, birthDate);
 		
 		System.out.println("Enter order date: ");
 		System.out.print("Status: ");
-		OrderStatus status = OrderStatus.valueOf(sc.next());
+		//OrderStatus status = OrderStatus.valueOf(sc.next());
 		
 		
 		
-		Order order = new Order(new Date(), status, client);
+		Order order = new Order(new Date(), OrderStatus.valueOf(sc.next()), new Client(clientName, clientEmail, birthDate));
 				
 		System.out.print("How many items to this order? ");
 		int items = sc.nextInt();

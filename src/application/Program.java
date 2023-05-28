@@ -37,7 +37,7 @@ public class Program {
 		
 		Order order = new Order(new Date(), OrderStatus.valueOf(sc.next()), new Client(clientName, clientEmail, birthDate));
 				
-		System.out.print("How many items to this order? ");
+		System.out.print("How many items to this order?  ");
 		int items = sc.nextInt();
 		
 		for (int i = 0; i < items; i++) {
